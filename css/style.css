@@ -100,6 +100,7 @@ main{
 .block a{
 	margin-bottom: 10px;
 	text-decoration: none;
+	color: blue;
 	text-align: left;
 	font-size: 150%;
 }
@@ -158,95 +159,6 @@ main{
 
 
 
-
-/*..............................................*/
-/*.gallery{
-	background: silver;
-	width: 75%;
-	display: grid;
-	grid-template-columns: auto; 
-	margin: auto;
-}			
-
-.item{
-	background: white;
-	margin: 50px;
-  	padding: 0 4px;
-    width: 50%;
-    margin: 20px auto 20px auto;
-    text-align: left;
-}
-
-
-.item img {
-	display: block;
-	margin: auto;
-	margin-top: 10px;
-	padding:;
-	width: 97%;
-}
-
-.item h2{
-	margin:20px auto 10px 8px;
-	display: flex;
-	justify-content: flex-start;
-}
-
-.item p{
-	margin:20px 8px 20px 8px;
-}
-
-.item a{
-	text-decoration: none;
-	color: blue;
-}
-
-@media screen and (max-width: 600px){
-	.gallery{
-	background: silver;
-	width: 100%;
-	display: grid;
-	grid-template-columns: auto; 
-	margin: auto;
-}
-.item{
-	background: white;
-	margin: 50px;
-  	padding: 0 4px;
-    width: 90%;
-    margin: 20px auto 20px auto;
-    text-align: left;
-}
-}*/
-
-/*@media screen and (min-width: 1200px){
-	.gallery{
-	background: silver;
-	width: 75%;
-	display: grid;
-	grid-template-columns: auto auto auto;
-	margin: auto;
-}
-.item{
-	background: white;
-	margin: 50px;
-  	padding: 0 4px;
-    width: 90%;
-    margin: 20px auto 20px auto;
-    text-align: left;
-}
-
-@media screen and (min-width: 700px){
-	.gallery{
-	background: silver;
-	width: 100%;
-	display: grid;
-	grid-template-columns: 50% 50%;
-	margin: auto;
-}
-}*/
-
-
 /* NAVIGATION -------------------------------*/
 
 ul {
@@ -256,7 +168,7 @@ ul {
   height: auto;
   background-color: black;
 /*  border: 1px solid black;*/
-position: relative;
+  position: relative;
 }
 
 
@@ -293,34 +205,7 @@ li a:hover {
 	color: black;
 }
 
-@media screen and (min-width: 700px) {
-	ul {
-	display: grid;
-grid-template-columns: auto auto auto auto;
-}
 
-.gallery{
-	display: grid;
-	grid-template-columns: auto auto;
-	width: 80%;
-}
-
-.item{
-	width: 80%;
-}
-
-.text{
-	width: 75%;
-	display: grid;
-	grid-template-columns: auto auto auto;
-}
-
-.block{
-	  border: 3px solid #4588ba;
-	  padding: 10px;
-}
-
-}
 
 
 
@@ -331,22 +216,19 @@ footer{
 }
 /*text-decorations gets rid of underline on links*/
 
+/* EVENT PAGE ------------------------------------------*/
 
 .event-page{
 	display: grid;
-	width: 70%;
-	grid-template-columns: 95%; 
-	justify-content: space-around;
+	width: 100%;
 	margin: auto;
-	background: white;
-
 }
 
 .event{
 	background: white;
 	border: 20px #008eee;
   	padding: 0 10px;
-    width: 60%;
+    width: 95%;
     margin: auto;
     align-items: center;
     border-bottom: 3px solid #4588ba; 
@@ -355,19 +237,35 @@ footer{
 
 .event img{
 	display: block;
-	width: 100%;
+/*	padding: 50px;*/
+	width: 70%;	
+	margin: auto;
 }
 
 .event h2{
 	padding: 20px;
 	display: flex;
-	flex-direction: 
+	flex-direction;
+	font-size: 120%;
 }
 	
 .event p{
-padding-bottom: 50px;
+	padding-bottom: 50px;
+	font-size: 120%;
+	width: 50%;
+	text-align: center;
+	margin: auto;
+
 }
 
+.event a{
+	text-decoration: none;
+	color: blue;
+}
+
+#end{
+	border: none;
+}
 
 
 /* DINING ---------------------------------------------------*/
@@ -456,6 +354,9 @@ address{
 	text-decoration: none;
 }
 
+
+
+
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/index.jpg");
   height: 50vh;
@@ -504,4 +405,47 @@ i{
 	font-size:30px;
 	margin:auto;
 	text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+	ul {
+	display: grid;
+grid-template-columns: auto auto auto auto;
+}
+
+.gallery{
+	display: grid;
+	grid-template-columns: auto auto;
+	width: 80%;
+}
+
+.item{
+	width: 80%;
+}
+
+.text{
+	width: 75%;
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+.block{
+	  border: 3px solid #4588ba;
+	  padding: 10px;
+}
+
+/*.event-page{
+	width: 75%;
+}
+
+.event{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.event img{
+	width: 50%;
+}*/
+}
 }
