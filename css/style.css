@@ -14,7 +14,7 @@ h1{
 	padding: 2px;
 	justify-content: center;
 	color: Black;
-	font-size: 3.5em;
+	font-size: 350%;
 }
 
 h3{
@@ -29,7 +29,7 @@ header{
 /*	display: grid;
 *//*	grid-auto-columns: auto auto */
 /*	height:70px;*/
-	width: 87%;
+	width: 100%;
 /*	height: 50vh;*/
 }	
 
@@ -58,7 +58,7 @@ a.skip:focus{
 
 main{
 	background: white;
-	width: 87%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;	
 	justify-content: space-between;
@@ -72,13 +72,13 @@ main{
 	display: grid;
 	margin-top: 20px;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
+	font-size: 150%;
 }
 
 /* INDEX PAGE -------------------------------*/ 
 .text{
-	background: white;
-	width: 75%;
+	width: 100%;
 	display: grid;
 	grid-template-columns: auto; 
 	margin: auto;
@@ -88,25 +88,28 @@ main{
 	display: grid;
 	background: white;
     padding: 0 4px;
-    width: 100%	;
-    margin: 30px auto;
+    width: 95%	;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 60px;
     text-decoration: none;
+    border-bottom: 3px solid #4588ba; 
+    margin-bottom: 50px;
 }
 
 .block a{
 	margin-bottom: 10px;
 	text-decoration: none;
 	text-align: left;
+	font-size: 150%;
 }
 
 .block p{
-	text-align: left;
+	text-align: center;
 	margin-bottom: 20px;
+	font-size: 150%;
 }
 
-.block h3{
-	text-align: left;
-}
 
 /*GALLERY PAGE ---------------------------------------------*/
 
@@ -140,10 +143,12 @@ main{
 	margin:20px auto 10px 8px;
 	display: flex;
 	justify-content: flex-start;
+	font-size: 130%;
 }
 
 .item p{
 	margin:20px 8px 20px 8px;
+	font-size: 130%;
 }
 
 .item a{
@@ -244,24 +249,26 @@ main{
 
 /* NAVIGATION -------------------------------*/
 
-
 ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 100%;
+  height: auto;
   background-color: black;
-  border: 1px solid black;
+/*  border: 1px solid black;*/
+position: relative;
 }
+
 
 nav a{
 	display: block;
 	color: white;
 	padding: 8px 16px;
 	text-decoration: none;
+	text-align: center;
 }
 
-nav {
+/*nav {
   height: 100%;
   width: 13%;
   position: fixed;
@@ -271,7 +278,7 @@ nav {
   background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
-}
+}*/
 
 /* Change the link color on hover 
 /*also want to use focus for tab users*/
@@ -282,9 +289,40 @@ li a:hover {
 
 
 .current{
-	background-color: white;	
+	background-color: #b1ddef;
 	color: black;
 }
+
+@media screen and (min-width: 700px) {
+	ul {
+	display: grid;
+grid-template-columns: auto auto auto auto;
+}
+
+.gallery{
+	display: grid;
+	grid-template-columns: auto auto;
+	width: 80%;
+}
+
+.item{
+	width: 80%;
+}
+
+.text{
+	width: 75%;
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+.block{
+	  border: 3px solid #4588ba;
+	  padding: 10px;
+}
+
+}
+
+
 
 
 footer{
@@ -445,7 +483,7 @@ address{
 
 .hero-text p{
 	padding-top: 30px;
-	font-size: 2em;
+	font-size: 200%;
 }
 
 
