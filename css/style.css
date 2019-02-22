@@ -9,6 +9,21 @@ h2{
 	justify-content: center;
 }
 
+h1{
+	display: flex;
+	padding: 2px;
+	justify-content: center;
+	color: Black;
+	font-size: 3.5em;
+}
+
+h3{
+	display: grid;
+	margin: auto;
+	text-decoration: none;
+	padding-top: 10px;
+}
+
 
 header{
 /*	display: grid;
@@ -43,14 +58,59 @@ a.skip:focus{
 
 
 main{
-	background: #4b5d87;
+	background: white;
 	width: 87%;
 	display: flex;
 	flex-direction: column;	
 	justify-content: space-between;
 }
 
-/*GALLERY PAGE*/
+
+.overview{
+	width: 60%;
+	margin: auto;
+	display: inline-block;
+	display: grid;
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/* INDEX PAGE -------------------------------*/ 
+.text{
+	background: white;
+	width: 75%;
+	display: grid;
+	grid-template-columns: auto; 
+	margin: auto;
+}
+
+.block{
+	display: grid;
+	background: white;
+    padding: 0 4px;
+    width: 100%	;
+    margin: 30px auto;
+    text-decoration: none;
+}
+
+.block a{
+	margin-bottom: 10px;
+	text-decoration: none;
+	text-align: left;
+}
+
+.block p{
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.block h3{
+	text-align: left;
+}
+
+/*GALLERY PAGE ---------------------------------------------*/
+
 .gallery{
 	background: silver;
 	width: 75%;
@@ -132,15 +192,8 @@ main{
 }
 }*/
 
-/*FONTS*/
-h1{
-	display: flex;
-	padding: 2px;
-	justify-content: center;
-	color: Black;
-	font-size: 2em;
-}
 
+/* NAVIGATION -------------------------------*/
 
 ul {
   list-style-type: none;
@@ -183,40 +236,12 @@ li a:hover {
 	color: black;
 }
 
-h3{
-	display: grid;
-	margin: auto;
-	text-decoration: none;
-	padding-top: 10px;
-}
-
-
 
 footer{
 	background: black;
 	color: white;
 }
 /*text-decorations gets rid of underline on links*/
-
-.text{
-	background: #4b5d87;
-	width: 75%;
-	display: grid;
-	grid-template-columns: auto; 
-	grid-template-rows: auto auto auto auto auto auto auto;
-	margin: auto;
-}
-
-.block{
-	display: grid;
-	background: white;
-	border: 20px #008eee;
-    padding: 0 4px;
-    border: 1px solid black;
-    width: 100%	;
-    margin: 30px auto;
-    text-decoration: none;
-}
 
 
 .event-page{
@@ -225,36 +250,39 @@ footer{
 	grid-template-columns: 95%; 
 	justify-content: space-around;
 	margin: auto;
+	background: white;
+
 }
 
 .event{
-	background: silver;
+	background: white;
 	border: 20px #008eee;
   	padding: 0 10px;
-    width: 80;
-    margin: 0 auto;
+    width: 60%;
+    margin: auto;
     align-items: center;
     border-bottom: 3px solid #4588ba; 
-
+    margin-bottom: 50px;
 }
 
 .event img{
 	display: block;
-	margin:  auto;
-	width: 70%;
-	border:5px solid black;
+	width: 100%;
+}
+
+.event h2{
+	padding: 20px;
+	display: flex;
+	flex-direction: 
+}
+	
+.event p{
+padding-bottom: 50px;
 }
 
 
-.overview{
-	width: 60%;
-	margin: auto;
-	display: inline-block;
-	display: grid;
-	justify-content: center;
-	margin-top: 20px;
-	text-align: center;
-}
+
+/* DINING ---------------------------------------------------*/
 
 .dining{
 	display: grid;
@@ -275,13 +303,25 @@ footer{
   	padding: 0 10px;
     margin: 20px auto 20px auto;
     align-items: center;
+    text-align: center;
+}
+
+.rest h2{
+	padding: 20px;
+}
+
+.rest h3{
+	margin-bottom: 10px;
+	text-decoration: none;
+	color: white;
 }
 
 .rest h4{
-		display: grid;
+	display: grid;
 	margin: auto;
 	text-decoration: none;
 	padding-top: 10px;
+	margin-bottom: 10px;
 }
 
 .rest img{
@@ -291,39 +331,52 @@ footer{
 }	
 
 .rest p{
-	padding-top: 10px;
 	justify-content: center;
-	padding: 20px;
 	margin: 0 auto;
+	padding-top: 3px;
 	text-decoration: none;
+	padding-bottom: 10px;
 /*	display: flex;
 	justify-content: center;*/
 }
 
-
+#veg{
+	background: black;
+	color: white;
 }
-blockquote{
-		display: grid;
-		grid-template-columns: auto auto;
+
+#organic{
+	background: white;
+}
+
+#halal{
+	background: white;
+}
+
+blockquote, q{
+	display: grid;
+	grid-template-columns: auto auto;
 	margin: auto;
 	text-decoration: none;
 	font-size: small;
+	color: gray;
 }
 
 address{
-		display: grid;
+	display: grid;
 	margin: auto;
 	text-decoration: none;
-	padding-top: 10px;
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/samo.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/index.jpg");
   height: 50vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
+  display: grid;
+  grid-template-rows: auto auto;
 }
 
 .hero-text {
@@ -331,10 +384,21 @@ address{
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 80%;
   transform: translate(-50%, -50%);
   color: white;
   font-family: 'Sofia';
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto auto;
 }
+
+.hero-text p{
+	padding-top: 30px;
+	font-size: 2em;
+}
+
+
 
 footer{
 	height:15vh;
@@ -349,7 +413,7 @@ footer{
 i{
 	text-decoration: none;
 	color:white;
-	size:20px;
+	font-size:30px;
 	margin:auto;
 	text-align: center;
 }
