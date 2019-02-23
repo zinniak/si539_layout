@@ -161,7 +161,11 @@ li a:hover {
 
 .hero-text p{
 	padding-top: 30px;
-	font-size: 200%;
+	font-size: 160%;
+}
+
+.hero-text h1{
+	font-size: 320%;
 }
 
 .text{
@@ -224,7 +228,6 @@ li a:hover {
 	display: block;
 	margin: auto;
 	margin-top: 10px;
-	padding:;
 	width: 97%;
 }
 
